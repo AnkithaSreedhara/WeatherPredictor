@@ -1,4 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F1021" minimumToolsVersion="Automatic">
+    <entity name="CurrentCondition" representedClassName="Weather_Predictor.CurrentCondition" syncable="YES">
+        <attribute name="cloudcover" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="humidity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="observation_time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="precipMM" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pressure" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="temp_C" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="temp_F" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="visibility" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weatherCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weatherDescValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weatherIconUrlValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="winddir16Point" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="winddirDegree" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="windspeedKmph" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="windspeedMiles" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Request" representedClassName="Weather_Predictor.Request" syncable="YES">
+        <attribute name="query" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Weather" representedClassName="Weather_Predictor.Weather" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="precipMM" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tempMaxC" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tempMaxF" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tempMinC" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tempMinF" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weatherCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weatherDescValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weatherIconUrlValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="winddir16Point" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="winddirDegree" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="windspeedKmph" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="windspeedMiles" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CurrentCondition" positionX="-63" positionY="-18" width="128" height="270"/>
+        <element name="Request" positionX="-54" positionY="108" width="128" height="75"/>
+        <element name="Weather" positionX="-36" positionY="117" width="128" height="240"/>
+    </elements>
 </model>
